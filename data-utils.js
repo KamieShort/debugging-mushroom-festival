@@ -1,4 +1,4 @@
-export function addFriend(friends, name) {
+export function addFriend(name, friends) {
     const newFriend = {
         name: name || `Friend #${Math.floor(Math.random() * 1000)}`,
         satisfaction: 1,
