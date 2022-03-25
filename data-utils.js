@@ -1,15 +1,15 @@
-function addFriend(friends, name) {
+export function addFriend(name, friends) {
     const newFriend = {
         name: name || `Friend #${Math.floor(Math.random() * 1000)}`,
-        satisfaction: 1
+        satisfaction: 1,
     };
-    
+
     friends.push(newFriend);
 }
 
-export default function findFriendByName(name, friends) {
+export function findFriendByName(name, friends) {
     for (friend of friends) {
-        if (friend.name = name) {
+        if ((friend.name = name)) {
             return friend;
         }
     }
